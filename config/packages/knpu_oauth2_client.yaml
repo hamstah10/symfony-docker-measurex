@@ -1,0 +1,14 @@
+knpu_oauth2_client:
+    clients:
+        # configure your clients as described here: https://github.com/knpuniversity/oauth2-client-bundle#configuration
+         cognito: # name of our client
+            type: 'generic' # type 
+            provider_class: '\CakeDC\OAuth2\Client\Provider\Cognito' # class provided by agent package
+            client_id: 'AKIA32PUEWOLM4QWGJEW' # Cognito app id
+            client_secret: 'cp89f692n0dmln2bpft0t335ldlnqo6u1723g8550afnv3b2n6a' # Cognito app secret
+            redirect_route: connect_cognito_check # name of the route where we wanna redirect callback, it mush be same as configued in the Cognito app
+            provider_options:
+                region: eu-central-1
+                cognitoDomain: <AWS_COGNITO_DOMAIN> # Cognito domain, just the domain, without region and aws suffix
+                scope: 'email' #scopes configured in cognito
+
