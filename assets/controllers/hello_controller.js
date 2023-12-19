@@ -16,5 +16,4 @@ export default class extends Controller {
     }
 }
 
-const application = Application.start()
-application.register('content-loader', ContentLoader)
+
