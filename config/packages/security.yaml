@@ -51,7 +51,7 @@ security:
             logout:
                 path: /logout
                 # where to redirect after logout
-                # target: app_any_route
+                target: app_logout_redirect
 
 
             # activate different ways to authenticate
