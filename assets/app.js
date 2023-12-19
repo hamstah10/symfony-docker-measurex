@@ -12,4 +12,4 @@ import './styles/app.scss'
 // Import the controller for the default p
 
 registerReactControllerComponents(require.context('./react/controllers', true, /\.(j|t)sx?$/));
-//registerReactControllerComponents();
+registerReactControllerComponents();
