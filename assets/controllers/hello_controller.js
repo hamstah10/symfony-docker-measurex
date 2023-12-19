@@ -1,4 +1,5 @@
 import { Controller } from '@hotwired/stimulus';
+import ContentLoader from 'stimulus-content-loader'
 
 /*
  * This is an example Stimulus controller!
@@ -14,3 +15,6 @@ export default class extends Controller {
         this.element.textContent = 'Hello Stimulus! Edit me in assets/controllers/hello_controller.js';
     }
 }
+
+const application = Application.start()
+application.register('content-loader', ContentLoader)

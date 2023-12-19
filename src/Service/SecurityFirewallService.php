@@ -2,7 +2,7 @@
 use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\HttpFoundation\RequestStack;
 
-class ExampleService
+class SecurityFirewallService
 {
     public function __construct(
         // Avoid calling getFirewallConfig() in the constructor: auth may not
